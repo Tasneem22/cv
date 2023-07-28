@@ -1,0 +1,33 @@
+<script>
+    const anagrams = [
+        "oz bilal tochberer",
+        "it's razorbill beachcomber",
+        "och robe tilblazer",
+        "bib chorizo cellarmaster",
+        "thor bble carizole",
+        "zll borcht aberoie",
+        "brzl orche atobile",
+        "dame shelburne characterizing",
+        "uber englishman characterized",
+        "agnes rhumbline characterized",
+        "rehab scrutinized charlemagne",
+        "dreams zurich interchangeable",
+        "bam hamster technocratic",
+        "mechatronic masterbatch",
+        "bam ratchet mechatronics"
+    ];
+    const sort = (anagram) => anagram.split("").sort().join("");
+    function isAnagramInArray(anagram, arr) {
+        let token = sort(anagram.toLowerCase());
+        let total = []
+
+        for (let x = 0; x < anagrams.length; x++) {
+            if (sort(anagrams[x]) === token) {
+                total.push(anagrams[x])
+            }
+        }
+
+        return total
+    }
+    console.log(isAnagramInArray("Bob Ziroll Teacher", anagrams));
+</script>

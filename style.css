@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('Poppins-Regular.ttf');
+}
+
+:root {
+    --main-color: #cb3931;
+    --second-color: #f0f0f0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-image {
+    width: 50%;
+}
+
+.header-image img {
+    width: 100%;
+}
+
+header article.header-text {
+    width: 40%;
+    color: var(--main-color)
+}
+
+@media (max-width:767px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    header article.header-text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    header .header-image {
+        width: 100%;
+    }
+
+}
+
+section.about {
+    background-color: var(--second-color);
+    margin-top: -100px;
+    margin-left: 100px;
+}
+
+section.about .about-one {
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.about .about-one h2,
+.about-two h2 {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+section.about .about-one div {
+    color: var(--main-color);
+}
+
+section.about .about-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+section.about .about-two h3 {
+    color: var(--main-color);
+    padding-left: 140px;
+}
+
+section.about .about-two nav ul {
+    margin-right: 50px;
+}
+
+section.about .about-two nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+@media (max-width:767px) {
+    section.about {
+        background-color: var(--second-color);
+        margin-top: -100px;
+        margin-left: 0px;
+
+    }
+
+    section.about .about-one {
+        padding-top: 80px;
+        display: block;
+        text-align: center;
+    }
+
+    section.about .about-one h2,
+    .about-two h2 {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    section.about .about-two {
+        display: block;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    section.about .about-two h3 {
+        padding-left: 0px;
+    }
+
+    section.about .about-two nav ul {
+        margin-right: 50px;
+    }
+
+    section.about .about-two nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 5px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer h3 {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+footer section.experince {
+    width: 50%;
+}
+
+footer section.education {
+    width: 40%;
+}
+
+footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+@media (max-width:767px) {
+    footer {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    footer section.experince {
+        width: 100%;
+    }
+
+    footer section.education {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
